@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+body {
+  background: #f5f5f5;
+}
+/* Пример стилей для календаря */
+.rw-calendar {
+  border: 1px solid #ccc;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Пример стилей для выбранной даты */
+.rw-state-selected {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Пример стилей для дат в календаре при наведении */
+.rw-state-focus {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* Пример стилей для кнопок переключения месяцев в календаре */
+.rw-btn {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Пример стилей для выпадающего списка с месяцами */
+.rw-calendar-header {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Пример стилей для подсказок при выборе даты */
+.rw-popup {
+  border: 1px solid #ccc;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.rw-widget-input {
+  padding: 20px !important;
+  padding-left: 35px !important;
+}
+.rw-input-addon {
+  position: absolute !important;
+  z-index: 100 !important;
+  border: none !important;
+  width: 100%;
+  height: 100%;
+}
+.rw-input-addon:hover {
+  background: transparent !important;
+}
+.rw-input-addon::before {
+  content: "";
+  background: url("/note.svg");
+  height: 25px;
+  width: 25px;
+  left: 5px;
+  position: absolute;
+}
+.rw-widget-picker {
+  border: none !important;
+  width: 250px !important;
+}
+.rw-input-addon svg {
+  display: none !important;
+}
+
+.aav9.aa9v {
+  top: -4px;
+  left: 3px;
+}
+
+.aav9 {
+  background-color: #fff;
+  border: 4px solid #ffa723;
+  border-radius: 50%;
+  height: 17px;
+  left: 3px;
+  position: absolute;
+  width: 17px;
+  z-index: 2;
+}
+
+.a9va {
+  background-color: #ffd89e;
+  bottom: 0;
+  left: 10px;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+
+.v8aa {
+  height: 100px;
+  position: relative;
+  transform: rotate(90deg);
+}
+.v8aa-no {
+  transform: rotate(0deg);
+  height: 80px;
+}
+
+.aa9v1 {
+  bottom: -4px;
+  right: 4px;
+}
+
+.direction-gardient {
+  background: linear-gradient(268deg, #20ddb7 -4.4%, #22bb9c 107.33%), #21d6b1;
+}
+.booking-state-button {
+  min-width: 180px;
+}
+.booking-state-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -24px;
+  bottom: 0;
+  width: 1px;
+  border: 1px solid #a6efe0;
+  transform: rotate(90deg);
+  z-index: 0;
+}
+
+.booking-state-button-two::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -24px;
+  bottom: 0;
+  width: 1px;
+  border: 1px solid #e4e9f0;
+  transform: rotate(90deg);
+  z-index: 0;
+}
+
+.aav9-no,
+.a9va-no,
+.aa9v-no {
+  background-color: transparent;
+  border-color: transparent;
+  border: none;
+  padding: 1px;
+  background: url(/round-city.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: none;
+  left: 3.2px;
+}
+.aa9v-no {
+  left: 10px;
+  position: absolute;
+  top: 17px;
+  width: 2px;
+  background: url(/line-city.svg);
+  height: 45px;
+}
+.aav9-no {
+  top: -10px !important;
+}
+.aa9v1-no {
+  top: 70px !important;
+}
+/* CustomSelect.css */
+.custom-select {
+  position: relative;
+  width: 200px;
+  cursor: pointer;
+  font-size: 10px;
+  color: #95a4bc;
+  margin-bottom: 20px;
+}
+
+.selected-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 12px;
+  background-color: #fff;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.arrow {
+  margin-left: auto;
+}
+
+.options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #fff;
+  display: none;
+  z-index: 200;
+}
+
+.option {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.option.selected {
+  background-color: #e0e0e0;
+}
+
+.custom-select.open .options {
+  display: block;
+}
+.profile-line .aav9 {
+  border: 4px solid #ff886d;
+}
+
+.profile-line .a9va {
+  background: #f9c9bf;
+}

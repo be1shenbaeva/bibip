@@ -1,0 +1,16 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  viewBox="0 0 16 16"
+  fill="none"
+>
+  <path
+    d="M2.72027 5.93945L7.06694 10.2861C7.58027 10.7995 8.42027 10.7995 8.93361 10.2861L13.2803 5.93945"
+    stroke="#DADADA"
+    stroke-width="1.5"
+    stroke-miterlimit="10"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
